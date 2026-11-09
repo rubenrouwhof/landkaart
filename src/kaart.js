@@ -31,7 +31,7 @@ function svg(tag, attrs = {}) {
  * markers toont voor een lijst plaatsen ({ plaats, lat, lon, pools }).
  */
 export async function tekenKaart(container, { onKies }) {
-  const antwoord = await fetch('/provincies.geojson');
+  const antwoord = await fetch(`${import.meta.env.BASE_URL}provincies.geojson`);
   if (!antwoord.ok) throw new Error(`Kaart niet geladen (${antwoord.status})`);
   const geo = await antwoord.json();
   const vlak = {
