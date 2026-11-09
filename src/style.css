@@ -1,0 +1,67 @@
+/* Wordt alleen getoond als er een sheet is om te openen; :not([hidden]) laat
+   de overloop van de werkbalk intact. */
+#filters-openen {
+  display: none;
+}
+
+nldd-sidebar-section[collapsed] #filters-openen:not([hidden]) {
+  display: inline-flex;
+}
+
+/* In de sheet liggen de resultaten erachter, dus er valt niets over te slaan. */
+nldd-sidebar-section[collapsed] #filters-overslaan {
+  display: none;
+}
+
+.kaart {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 600 / 700;
+  max-width: 560px;
+  margin-inline: auto;
+}
+
+.kaart__provincies {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.kaart__provincies path {
+  fill: var(--primitives-color-mintgroen-200);
+  stroke: var(--primitives-color-donkerblauw-700);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+
+.kaart__markers {
+  position: absolute;
+  inset: 0;
+}
+
+/* 44px raakvlak (WCAG 2.5.8); de punt van de pin staat op de coördinaat. */
+.kaart__marker {
+  position: absolute;
+  display: grid;
+  place-items: end center;
+  width: 44px;
+  height: 44px;
+  padding: 0 0 2px;
+  border: 0;
+  border-radius: var(--primitives-corner-radius-sm);
+  background: none;
+  color: inherit;
+  transform: translate(-50%, -100%);
+}
+
+.kaart__marker:focus-visible {
+  outline: var(--semantics-focus-ring-outline);
+  outline-offset: var(--semantics-focus-ring-outline-offset);
+  box-shadow: var(--semantics-focus-ring-box-shadow);
+}
+
+.kaart__marker nldd-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
