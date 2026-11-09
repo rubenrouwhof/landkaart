@@ -1,0 +1,101 @@
+[
+  {
+    "id": "datapool-noord-holland",
+    "naam": "Datapool Noord-Holland",
+    "organisatie": "Provincies",
+    "vakgebieden": ["Data", "AI"],
+    "plaats": "Haarlem",
+    "lat": 52.381,
+    "lon": 4.637,
+    "omschrijving": "Data-analisten en data-engineers die tijdelijk meewerken aan projecten van provincies in de regio.",
+    "contact": "datapool@example.nl"
+  },
+  {
+    "id": "flexpool-rijk-software",
+    "naam": "Flexpool Software Rijk",
+    "organisatie": "Rijksoverheid",
+    "vakgebieden": ["Software", "Architectuur"],
+    "plaats": "Den Haag",
+    "lat": 52.078,
+    "lon": 4.288,
+    "omschrijving": "Ontwikkelaars en architecten die ministeries en uitvoeringsorganisaties tijdelijk versterken.",
+    "contact": "software@example.nl"
+  },
+  {
+    "id": "securitypool-rijk",
+    "naam": "Securitypool Rijk",
+    "organisatie": "Rijksoverheid",
+    "vakgebieden": ["Security"],
+    "plaats": "Den Haag",
+    "lat": 52.078,
+    "lon": 4.288,
+    "omschrijving": "Securityspecialisten voor risicoanalyses, pentests en het inrichten van informatiebeveiliging.",
+    "contact": "security@example.nl"
+  },
+  {
+    "id": "ai-pool-overheid",
+    "naam": "AI-pool Overheid",
+    "organisatie": "Overheidsbreed",
+    "vakgebieden": ["AI", "Data"],
+    "plaats": "Den Haag",
+    "lat": 52.078,
+    "lon": 4.288,
+    "omschrijving": "Specialisten in AI en algoritmen die overheidsorganisaties helpen bij verantwoorde inzet van AI.",
+    "contact": "ai@example.nl"
+  },
+  {
+    "id": "beheerpool-rijk",
+    "naam": "Beheerpool Rijk",
+    "organisatie": "Rijksoverheid",
+    "vakgebieden": ["Beheer"],
+    "plaats": "Den Haag",
+    "lat": 52.078,
+    "lon": 4.288,
+    "omschrijving": "Applicatie- en functioneel beheerders die tijdelijk bijspringen bij piekbelasting of uitval.",
+    "contact": "beheer@example.nl"
+  },
+  {
+    "id": "informatiepool-overheid",
+    "naam": "Informatiepool Overheid",
+    "organisatie": "Overheidsbreed",
+    "vakgebieden": ["Informatiemanagement"],
+    "plaats": "Den Haag",
+    "lat": 52.078,
+    "lon": 4.288,
+    "omschrijving": "Informatiemanagers en archiefspecialisten voor de hele overheid.",
+    "contact": "informatie@example.nl"
+  },
+  {
+    "id": "projectpool-gemeenten-zuid-holland",
+    "naam": "Projectpool Gemeenten Zuid-Holland",
+    "organisatie": "Gemeenten",
+    "vakgebieden": ["Projectmanagement"],
+    "plaats": "Den Haag",
+    "lat": 52.078,
+    "lon": 4.288,
+    "omschrijving": "Projectleiders en scrum masters voor digitaliseringsprojecten van gemeenten in Zuid-Holland.",
+    "contact": "projecten@example.nl"
+  },
+  {
+    "id": "waterpool-digitaal",
+    "naam": "Waterpool Digitaal",
+    "organisatie": "Waterschappen",
+    "vakgebieden": ["Data", "Beheer", "Security"],
+    "plaats": "Utrecht",
+    "lat": 52.091,
+    "lon": 5.122,
+    "omschrijving": "Digitale specialisten die waterschappen tijdelijk ondersteunen, van data tot beveiliging.",
+    "contact": "water@example.nl"
+  },
+  {
+    "id": "flexpool-gemeenten-brabant",
+    "naam": "Flexpool Gemeenten Brabant",
+    "organisatie": "Gemeenten",
+    "vakgebieden": ["Software", "Projectmanagement", "Architectuur"],
+    "plaats": "Tilburg",
+    "lat": 51.555,
+    "lon": 5.091,
+    "omschrijving": "Brabantse gemeenten delen hier ontwikkelaars, architecten en projectleiders.",
+    "contact": "brabant@example.nl"
+  }
+]

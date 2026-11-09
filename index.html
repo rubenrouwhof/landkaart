@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pools voor flexibele inzet van digitaliseringspersoneel</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/touch-icon.png">
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <nldd-shell>
+      <nldd-page>
+        <nldd-sidebar-section
+          sidebar-label="Filters"
+          translations='{"components.sidebar-section.sheet-dismiss-action": "Klaar"}'
+        >
+          <nldd-title
+            slot="header"
+            size="2"
+            text="Pools voor flexibele inzet van digitaliseringspersoneel"
+            supporting-text="Vind een pool met specialisten die je organisatie tijdelijk kunnen versterken."
+            heading-level="1"
+          ></nldd-title>
+
+          <nldd-container
+            slot="sidebar"
+            padding="16"
+            padding-bottom="8"
+          >
+            <nldd-skip-link
+              id="filters-overslaan"
+              text="Sla filters over"
+              href="#resultaten"
+            ></nldd-skip-link>
+            <nldd-title
+              size="5"
+              text="Organisatie"
+              heading-level="2"
+            ></nldd-title>
+            <nldd-spacer size="8"></nldd-spacer>
+            <nldd-list
+              id="filter-organisatie"
+              appearance="simple"
+              dividers="never"
+              accessible-label="Organisatie"
+            ></nldd-list>
+            <nldd-spacer size="24"></nldd-spacer>
+            <nldd-title
+              size="5"
+              text="Vakgebied"
+              heading-level="2"
+            ></nldd-title>
+            <nldd-spacer size="8"></nldd-spacer>
+            <nldd-list
+              id="filter-vakgebied"
+              appearance="simple"
+              dividers="never"
+              accessible-label="Vakgebied"
+            ></nldd-list>
+          </nldd-container>
+
+          <nldd-toolbar accessible-label="Zoeken en filteren">
+            <nldd-toolbar-item
+              slot="start"
+              min-width="240px"
+              width="100%"
+              max-width="560px"
+            >
+              <nldd-search-field
+                id="zoeken"
+                placeholder="Zoek op naam, organisatie of plaats"
+              ></nldd-search-field>
+              <nldd-menu-item
+                slot="overflow"
+                icon="magnifier"
+                text="Zoeken"
+              ></nldd-menu-item>
+            </nldd-toolbar-item>
+
+            <nldd-toolbar-item
+              id="filters-openen"
+              slot="end"
+            >
+              <nldd-button
+                appearance="secondary"
+                start-icon="slider-horizontal-3"
+                text="Filters"
+              ></nldd-button>
+              <nldd-menu-item
+                slot="overflow"
+                icon="slider-horizontal-3"
+                text="Filters"
+              ></nldd-menu-item>
+            </nldd-toolbar-item>
+          </nldd-toolbar>
+
+          <div id="actieve-filters" hidden>
+            <nldd-spacer size="16"></nldd-spacer>
+            <nldd-container
+              id="tokens"
+              layout="wrap"
+              gap="8"
+              vertical-alignment="center"
+            ></nldd-container>
+          </div>
+
+          <nldd-spacer size="16"></nldd-spacer>
+
+          <div id="kaart" class="kaart"></div>
+
+          <nldd-spacer size="24"></nldd-spacer>
+
+          <nldd-text
+            id="aantal"
+            size="sm"
+            color="secondary"
+            aria-live="polite"
+          ></nldd-text>
+
+          <nldd-spacer size="4"></nldd-spacer>
+
+          <nldd-list
+            id="resultaten"
+            accessible-label="Pools"
+          >
+            <nldd-inline-dialog
+              slot="empty"
+              variant="loading"
+            ></nldd-inline-dialog>
+            <nldd-inline-dialog
+              slot="no-results"
+              icon="magnifier"
+              text="Geen pools gevonden"
+              supporting-text="Pas je zoekopdracht of filters aan."
+            ></nldd-inline-dialog>
+          </nldd-list>
+        </nldd-sidebar-section>
+      </nldd-page>
+    </nldd-shell>
+
+    <nldd-sheet
+      id="detail"
+      placement="right"
+      width="480px"
+    >
+      <nldd-page>
+        <nldd-top-title-bar
+          id="detail-balk"
+          slot="header"
+          dismiss-text="Sluit"
+        ></nldd-top-title-bar>
+        <nldd-simple-section id="detail-inhoud"></nldd-simple-section>
+      </nldd-page>
+    </nldd-sheet>
+  </body>
+</html>
